@@ -1,0 +1,119 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    user-select:none;
+}
+
+
+body{
+    background-color: rgb(50, 110, 189);
+    color: rgb(0, 0, 0);
+
+    display: flex;
+    flex-wrap: nowrap;
+   
+    font-family: Helvetica;
+    text-align: center;
+    
+    /* align-content: center; align allong Y axis*/
+    justify-content: center;
+    
+}
+
+
+div{
+
+    font-size: 20px;
+    background-color: aliceblue;
+    width: 200px;
+    height: 60px;
+    box-shadow: 5px 5px 3px 3px rgba(0, 0, 0, 0.5);
+    padding-top: 20px;
+    margin: 200px 20px 20px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: box-shadow 0.1s, width 0.3s, padding-top 0.2s;
+}
+
+div:hover{
+    width: 300px;
+    box-shadow: 5px 5px 3px 3px rgb(179, 18, 18);
+}
+
+div:active{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 3px 3px 3px 3px rgb(189, 63, 63);
+    padding-top: 17px;
+}
+
+
+
+.modal{
+    justify-content: center;
+    top: 300px;
+    background-color: rgb(240, 248, 255);
+    position: absolute;
+    padding: 20px;
+    width:500px;
+    z-index: 10;
+    border-radius: 15px;
+    transition: border-radius 1s;
+}
+.modal:hover{
+    border-radius: 10px;
+}
+
+.modal-close{
+    position: inherit;
+    font-size: 20px;
+    color: rgba(83, 83, 83, 0.5);
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    top: 0px;
+    left: 450px;
+    transform: rotate(0deg);
+    background-color: rgba(90, 90, 90, 0);
+    border-style: none;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s, transform 0.3s;
+}
+.modal-close:hover{
+    transform: rotate(90deg);
+    background-color: rgba(90, 90, 90, 0);
+    color: rgb(0, 0, 0);  
+}
+
+.modal-overlay{
+    
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.644);
+    z-index: 5;
+    transition: background-color 0.3s;
+}
+.modal-overlay:hover{
+    background-color: rgba(0, 0, 0, 0.548);
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
